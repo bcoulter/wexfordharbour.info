@@ -1,0 +1,141 @@
+<!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//	Wexfordharbour.info App
+//  Copyright Brian and Fergal Coulter
+//	http://www.wexfordharbour.info
+//	bcoulter@wexfordharbour.info
+//
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////// --->
+<html>
+  <head>
+    <script language="javascript" type="text/javascript" src="http://wexfordharbour.info/ajaxapp/jquery.js"></script>
+    <link rel="stylesheet" href="http://wexfordharbour.info/css/weather_app2.css" />
+    <script src="phonegap-1.0.0.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <meta http-equiv="refresh" content="300" >
+  </head>
+  <body>
+     <!---   	<h2>wexfordharbour.fontcolor("003366").info").fontcolor("FF3300")</h2>
+     	--->
+     	
+  <div>   	
+ 	<h2>wexfordharbour<span style="color: #FF3300">.info</span></h2>
+
+
+  <!-- wexfordharbour.info -->
+<div id="datacontainer">
+
+  <div id="leftside">
+	<div id="spacerdiv">
+  	 weather at: <br>
+  	 </div>
+  	 
+  	<div id="spacerdiv"> 
+     wind speed: <br> 
+     direction: <br> 
+     </div>
+     
+    <div id="spacerdiv"> 
+     pressure: <br>
+     trend: <br>
+    </div>
+    
+ 	<div id="spacerdiv"> 
+	 tide: <br> 
+	 next tide: <br> 
+	 following tide: <br>
+	</div> 
+	
+	<div id="spacerdiv">  
+     rain 1 hr: <br> 
+	 rain 24 hr: <br>  	
+	</div>
+	 
+  </div>
+  
+  	
+
+  <div id="output">uh-huh! looks like something has gone wrong. sorry!</div>
+  
+  </div>
+  
+
+ <div id="buttons">
+  
+    <button class="btn" onclick="window.open('http://wexfordharbour.info/Weather', '_system');">WEATHER</button>
+  
+    <button class="btn"  onclick="window.open('http://wexfordharbour.info/Tides', '_system');">TIDES</button>
+    <br>
+    <button class="btn"  onclick="window.open('http://wexfordharbour.info/iHistory', '_system');">INTERACTIVE HISTORY</button>
+    <br>
+    <button class="btn"  onclick="window.open('http://wexfordharbour.info/iChart', '_system');">CHARTS / IMAGERY</button>
+    <br>
+    <button class="btn"  onclick="window.open('http://www.wexfordharbour.info/', '_system');">FULL WEBSITE</button>
+ 
+  </div>
+  
+</div>
+  
+  
+  <script id="source" language="javascript" type="text/javascript">
+  
+
+  $(function () 
+  {
+
+
+    $.ajax({                                      
+      url: 'http://wexfordharbour.info/ajaxapp/api.php',                  //the script to call to get data          
+      data: "",                        
+      dataType: 'json',                //data format      
+      success: function(data)          //on receive of reply
+      {
+     // 	var toptitl = ("<h2>"+("wexfordharbour").fontcolor("003366")+(".info").fontcolor("FF3300")+"</h2>");
+        var datetime = data[26];          //get suitably formatted date and time
+        var direction = data[2];          //get direction
+        var windsp = data[4];             //get wind speed
+        var windgust = data[5];           //get wind gust /////////////////////////////////////////////////// to be readded
+        var windf = data[6];              //get wind force
+        var gustf = data[7];              //get gust force
+        var rain24h = data[8];            //get rain 24hr
+        var rainHr = data[9];             //get rain iHr
+        var pressure = data[10];          //get pressure
+        var presstrend = data[11];        //get press trend 		//////////////////////////////////// to be readded
+        var curTide = data[15];           //get curr tide height
+        var tidetrend = data[16];         //get current tide trend //////////////////////////////////// to be readded
+        var nxtTide = data[20];           //get next tide time
+        var nxtTideH = data[21];           //get next tide height
+        var nxtHiLo = data[22];           //get next tide HiLo
+        var followTime = data[23];        //get following tide time
+        var followTideH = data[24];        //get following tide height
+        var followHiLo = data[25];        //get following tide HiLo
+        //--------------------------------------------------------------------------------------
+        // 3) Update html content
+        //--------------------------------------------------------------------------------------
+        $('#output').html(
+			"<div id='spacerdiv'>" + datetime + "<br> </div>" +
+			
+            "<div id='spacerdiv'>" + windsp  + " kts F" + windf + " - " + gustf + "<br>" +
+          	direction + "<br> </div>" +
+          	
+          	"<div id='spacerdiv'>" + pressure +" hPa <br>" +
+          	presstrend + "<br> </div>" + 
+          	
+            "<div id='spacerdiv'>" + curTide +" m " +  "<br>" +
+        	nxtHiLo + " " + nxtTide + " " + nxtTideH + "m<br>" +
+        	followHiLo + " " + followTime  +  " " + followTideH + "m<br> </div>" +
+        	
+           	"<div id='spacerdiv'>" + rainHr +" mm" + "<br>" +
+           	rain24h + " mm   	 <br> </div>" 
+           	
+           	);     
+           //Set output element html
+      } 
+    });
+  
+  }); 
+  </script>
+  
+  </body>
+</html>  
