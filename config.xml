@@ -14,6 +14,7 @@
         wexfordharbour.info Team
     </author>
 
+    <gap:plugin name="org.apache.cordova.inappbrowser">
 </widget>
 
 
