@@ -13,7 +13,7 @@
     <author email="brian@wexfordharbour.info" href="http://wexfordharbour.info">
         wexfordharbour.info Team
     </author>
-    <content src="index.html" />
-    <access origin="*" />
-    <gap:plugin name="org.apache.cordova.inappbrowser">
+
 </widget>
+
+
