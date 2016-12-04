@@ -12,5 +12,5 @@
     <author email="brian@wexfordharbour.info" href="http://wexfordharbour.info">
         wexfordharbour.info Team
     </author>
-<plugin name="org.li8.inappbrowser" spec="0.1" source="pgb" />
+  <gap:plugin name="org.apache.cordova.inappbrowser"/>
 </widget>
