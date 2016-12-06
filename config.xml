@@ -12,6 +12,7 @@
     <author email="brian@wexfordharbour.info" href="http://wexfordharbour.info">
         wexfordharbour.info Team
     </author>
-<plugin name="cordova-plugin-inappbrowser" source="npm" />
+  <access origin="http://wexfordharbour.info" />
+  <plugin name="cordova-plugin-inappbrowser" source="npm" />
 
 </widget>
