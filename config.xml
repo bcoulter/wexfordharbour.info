@@ -15,7 +15,7 @@
     <author email="brian@wexfordharbour.info" href="http://wexfordharbour.info">
         wexfordharbour.info Team
     </author>
-  <access origin="http://wexfordharbour.info" subdomains="true" />
+  <access origin="http://wexfordharbour.info/ajaxapp/" />
   <plugin name="cordova-plugin-inappbrowser" source="npm" />
 
 </widget>
