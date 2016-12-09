@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget id="info.wexfordharbour.app" 
-    android-versionCode="10005"
-    version="1.0.5" >
+    android-versionCode="10006"
+    version="1.0.6" >
  xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
 
 <!-- versionCode is optional and Android only -->
@@ -15,8 +15,8 @@
     <author email="brian@wexfordharbour.info" href="http://wexfordharbour.info">
         wexfordharbour.info Team
     </author>
-  <access origin="http://wexfordharbour.info"/>
-  <access origin="http://wexfordharbour.info" subdomains="true"/>
+  <access origin="http://wexfordharbour.eu"/>
+  <access origin="http://wexfordharbour.eu" subdomains="true"/>
   <plugin name="cordova-plugin-inappbrowser" source="npm" />
 
 </widget>
