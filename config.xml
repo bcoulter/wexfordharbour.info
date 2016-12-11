@@ -17,7 +17,7 @@
     </author>
   <access origin="*://*.wexfordharbour.eu/*" subdomains="true" />
   <access origin="http://wexfordharbour.eu/" />
-  <access origin="http://wexfordharbour.eu" subdomains="true" />
+  <access origin="http://wexfordharbour.eu/" subdomains="true" />
   <plugin name="cordova-plugin-inappbrowser" source="npm" />
 
 </widget>
