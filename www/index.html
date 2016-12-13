@@ -27,7 +27,7 @@
 <div id="datacontainer">
 
   <div id="leftside">
-	<div id="spacerdiv">
+	<div id="spacerfirst">
   	 weather at: <br>
   	 </div>
   	 
@@ -90,7 +90,7 @@
 
 
     $.ajax({                                      
-      url: 'http://wexfordharbour.eu/api.php',                  //the script to call to get data          
+      url: 'http://wexfordharbour.info/api.php',                  //the script to call to get data          
       data: "",                        
       dataType: 'json',                //data format      
       success: function(data)          //on receive of reply
@@ -118,7 +118,7 @@
         // 3) Update html content
         //--------------------------------------------------------------------------------------
         $('#output').html(
-			"<div id='spacerdiv'>" + datetime + "<br> </div>" +
+			"<div id='spacerfirst'>" + datetime + "<br> </div>" +
 			
             "<div id='spacerdiv'>" + windsp  + " kts F" + windf + " - " + gustf + "<br>" +
           	direction + "<br> </div>" +
