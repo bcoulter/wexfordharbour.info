@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget id="info.wexfordharbour.app" 
-    android-versionCode="10014"
-    version="1.0.14" >
+    android-versionCode="10015"
+    version="1.0.15" >
  xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
 
 <!-- versionCode is optional and Android only -->
