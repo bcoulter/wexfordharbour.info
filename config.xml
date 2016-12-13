@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+  <!-- Allow everything but only from the same origin and foo.com -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' foo.com">
 <widget id="info.wexfordharbour.app" 
     android-versionCode="10015"
     version="1.0.15" >
@@ -16,8 +18,6 @@
         wexfordharbour.info Team
     </author>
 	
-  <!-- Allow everything but only from the same origin and foo.com -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' foo.com">
   
   <plugin name="cordova-plugin-inappbrowser" source="npm" />
   <plugin name="cordova-plugin-whitelist" source="npm" />
