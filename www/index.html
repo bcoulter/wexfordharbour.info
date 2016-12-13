@@ -9,7 +9,7 @@
 <html>
   <head>
     <script language="javascript" type="text/javascript" src="http://wexfordharbour.info/ajaxapp/jquery.js"></script>
-    <link rel="stylesheet" href="weather_app2.css" />
+    <link rel="stylesheet" href="http://wexfordharbour.info/css/weather_app2.css" />
     <script src="phonegap-1.0.0.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
@@ -84,7 +84,6 @@
   {
     $( document ).bind( "mobileinit", function() {
     // Make your jQuery Mobile framework configuration changes here!
-
     $.mobile.allowCrossDomainPages = true;
     });
     $.support.cors=true;
@@ -100,15 +99,15 @@
         var datetime = data[26];          //get suitably formatted date and time
         var direction = data[2];          //get direction
         var windsp = data[4];             //get wind speed
-        var windgust = data[5];           //get wind gust /////////////////////////////////////////////////// to be readded
+        var windgust = data[5];           //get wind gust 
         var windf = data[6];              //get wind force
         var gustf = data[7];              //get gust force
         var rain24h = data[8];            //get rain 24hr
         var rainHr = data[9];             //get rain iHr
         var pressure = data[10];          //get pressure
-        var presstrend = data[11];        //get press trend 		//////////////////////////////////// to be readded
+        var presstrend = data[11];        //get press trend 
         var curTide = data[15];           //get curr tide height
-        var tidetrend = data[16];         //get current tide trend //////////////////////////////////// to be readded
+        var tidetrend = data[16];         //get current tide trend 
         var nxtTide = data[20];           //get next tide time
         var nxtTideH = data[21];           //get next tide height
         var nxtHiLo = data[22];           //get next tide HiLo
