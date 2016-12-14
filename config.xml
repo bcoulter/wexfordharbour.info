@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget id="info.wexfordharbour.app" 
-    android-versionCode="10015"
-    version="1.0.15" >
+    android-versionCode="10016"
+    version="1.0.16" >
  xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
 
 <!-- versionCode is optional and Android only -->
@@ -21,7 +21,6 @@
   <plugin name="cordova-plugin-whitelist" source="npm" />
   <access origin="http://wexfordharbour.info/" subdomains="true" />
   <access origin="http://wexfordharbour.info/ajaxapp/" subdomains="true" />
-  <access origin="http://wexfordharbour.info/css/" subdomains="true" />
 
 </widget>
 
