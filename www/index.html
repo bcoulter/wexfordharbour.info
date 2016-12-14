@@ -8,13 +8,13 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// --->
 <html>
   <head>
-    <link rel="stylesheet" href="http://wexfordharbour.info/css/weather_app2.css" />
+    <link rel="stylesheet" href="./weather_app2.css" />
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="http://wexfordharbour.info/ajaxapp/jquery.js"></script>
     <script src="phonegap-1.0.0.js"></script>
     <!-- Allow everything but only from the same origin and foo.com -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' foo.com">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' foo.com"> 
     <meta http-equiv="refresh" content="300" >
   </head>
   <body>
@@ -30,7 +30,7 @@
 
   <div id="leftside">
 	<div id="spacerfirst">
-  	 weather at: <br>
+  	 weather at (LT): <br>
   	 </div>
   	 
   	<div id="spacerdiv"> 
@@ -41,11 +41,12 @@
     <div id="spacerdiv"> 
      pressure: <br>
      trend: <br>
+     temperature: <br>
     </div>
     
  	<div id="spacerdiv"> 
 	 tide: <br> 
-	 next tide: <br> 
+	 next tide (LT): <br> 
 	 following tide: <br>
 	</div> 
 	
@@ -108,6 +109,7 @@
         var rainHr = data[9];             //get rain iHr
         var pressure = data[10];          //get pressure
         var presstrend = data[11];        //get press trend 
+        var tempc = data[12];        //get press trend 
         var curTide = data[15];           //get curr tide height
         var tidetrend = data[16];         //get current tide trend 
         var nxtTide = data[20];           //get next tide time
@@ -126,7 +128,7 @@
           	direction + "<br> </div>" +
           	
           	"<div id='spacerdiv'>" + pressure +" hPa <br>" +
-          	presstrend + "<br> </div>" + 
+          	presstrend + "<br>" + tempc + " C<br></div>" + 
           	
             "<div id='spacerdiv'>" + curTide +" m " +  "<br>" +
         	nxtHiLo + " " + nxtTide + " " + nxtTideH + "m<br>" +
