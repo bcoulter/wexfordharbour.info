@@ -3,24 +3,16 @@
     android-versionCode="10017"
     version="1.0.17" >
  xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-
 <!-- versionCode is optional and Android only -->
-
   <name>wexfordharbour.info</name>
-
   <description>
        Wexford Harbour Information
   </description>
-
     <author email="brian@wexfordharbour.info" href="http://wexfordharbour.info">
         wexfordharbour.info Team
     </author>
-	
-  
   <plugin name="cordova-plugin-inappbrowser" source="npm" />
   <plugin name="cordova-plugin-whitelist" source="npm" />
-  <access origin="http://wexfordharbour.info/" subdomains="true" />
-  <access origin="http://wexfordharbour.info/ajaxapp/" subdomains="true" />
-
+  <access origin="http://*" />
+  <access origin="https://*" />
 </widget>
-
