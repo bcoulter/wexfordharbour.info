@@ -22,6 +22,8 @@
   </platform>
   <plugin name="cordova-plugin-inappbrowser" source="npm" />
   <plugin name="cordova-plugin-whitelist" source="npm" />
-  <access origin="http://*" />
-  <access origin="https://*" />
+  <!--   <access origin="http://*" />
+  <access origin="https://*" /> -->
+  <access origin="http://wexfordharbour.info/ajaxapp/" />
+  <access origin="https://wexfordharbour.info/ajaxapp/" />
 </widget>
