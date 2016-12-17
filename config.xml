@@ -4,7 +4,7 @@
     version="1.1.1" >
  xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
 <!-- versionCode is optional and Android only -->
-  <name>wexfordharbour.info</name>
+  <name>wexford harbour information</name>
   <description>
        Wexford Harbour Information
   </description>
