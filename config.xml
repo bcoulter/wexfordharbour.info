@@ -10,7 +10,6 @@
        Wexford Harbour Information
   </description>
   <preference name="windows-identity-name" value="20129bWexWx.wexfordharbourinformation" />
-  <preference name="WindowsStorePublisherName" value="CN=1FC018DA-39D7-4CA3-AF4C-85FC4183577F" />
   <platform name="android">
     <icon src="wexhrbr.png" width="180" height="180" />
   </platform>
@@ -22,9 +21,6 @@
   </platform>
   <plugin name="cordova-plugin-inappbrowser" source="npm" />
   <plugin name="cordova-plugin-whitelist" source="npm" />
-  <!--  <access origin="http://wexfordharbour.info/" />
-  <access origin="http://wexfordharbour.info/ajaxapp/" />
-  <access origin="https://wexfordharbour.info/ajaxapp/" /> -->
   <access origin="http://*" />
   <access origin="https://*" />
 </widget>
