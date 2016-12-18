@@ -8,6 +8,7 @@
   <description>
        Wexford Harbour Information
   </description>
+  <author>b@WexWx</author>
   <platform name="android">
     <icon src="wexhrbr.png" width="180" height="180" />
     <author email="brian@wexfordharbour.info" href="http://wexfordharbour.info">
