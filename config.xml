@@ -19,7 +19,7 @@
   </platform>
   <platform name="windows">
     <author>b@WexWx</author>
-    <preference name="windows-identity-name" value="PhonegapBuild.PGBDeveloper" />  
+    <preference name="windows-identity-name" value="b@WexWx" />  
     <icon src="wexhrbr.png" width="180" height="180" />
   </platform>
   <plugin name="cordova-plugin-inappbrowser" source="npm" />
