@@ -4,27 +4,19 @@
     version="1.1.1" >
  xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
 <!-- versionCode is optional and Android only -->
+  <author email="brian@wexfordharbour.info" href="http://wexfordharbour.info">b@WexWx</author>
   <name>wexford harbour information</name>
   <description>
        Wexford Harbour Information
   </description>
+  <preference name="windows-identity-name" value="20129bWexWx.wexfordharbourinformation" />
   <platform name="android">
     <icon src="wexhrbr.png" width="180" height="180" />
-    <author email="brian@wexfordharbour.info" href="http://wexfordharbour.info">
-        b@WexWx
-    </author>
   </platform>
   <platform name="ios">
-    <author email="brian@wexfordharbour.info" href="http://wexfordharbour.info">
-        b@WexWx
-    </author>
     <icon src="wexhrbr.png" width="180" height="180" />
   </platform>
   <platform name="winphone">
-    <author email="brian@wexfordharbour.info" href="http://wexfordharbour.info">
-        b@WexWx
-    </author>
-    <preference name="windows-identity-name" value="b@WexWx" />  
     <icon src="wexhrbr.png" width="180" height="180" />
   </platform>
   <plugin name="cordova-plugin-inappbrowser" source="npm" />
