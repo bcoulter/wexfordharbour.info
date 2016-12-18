@@ -8,7 +8,6 @@
   <description>
        Wexford Harbour Information
   </description>
-  <author>b@WexWx</author>
   <platform name="android">
     <icon src="wexhrbr.png" width="180" height="180" />
     <author email="brian@wexfordharbour.info" href="http://wexfordharbour.info">
@@ -21,7 +20,6 @@
   <platform name="winphone">
     <author>b@WexWx</author>
     <preference name="windows-identity-name" value="b@WexWx" />  
-    <preference name="PublisherDisplayName" value="b@WexWx" />  
     <icon src="wexhrbr.png" width="180" height="180" />
   </platform>
   <plugin name="cordova-plugin-inappbrowser" source="npm" />
