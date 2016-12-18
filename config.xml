@@ -15,10 +15,15 @@
     </author>
   </platform>
   <platform name="ios">
+    <author email="brian@wexfordharbour.info" href="http://wexfordharbour.info">
+        b@WexWx
+    </author>
     <icon src="wexhrbr.png" width="180" height="180" />
   </platform>
   <platform name="winphone">
-    <author>b@WexWx</author>
+    <author email="brian@wexfordharbour.info" href="http://wexfordharbour.info">
+        b@WexWx
+    </author>
     <preference name="windows-identity-name" value="b@WexWx" />  
     <icon src="wexhrbr.png" width="180" height="180" />
   </platform>
