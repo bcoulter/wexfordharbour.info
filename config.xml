@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget id="info.wexfordharbour.app" 
     android-versionCode="10101"
-    version="1.1.1" >
+<!--     version="1.1.1" > -->
  xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
 <!-- versionCode is optional and Android only -->
   <author email="brian@wexfordharbour.info" href="http://wexfordharbour.info">b@WexWx</author>
@@ -9,7 +9,10 @@
   <description>
        Wexford Harbour Information
   </description>
-  <preference name="windows-identity-name" value="20129bWexWx.wexfordharbourinformation" />
+<!--   <preference name="windows-identity-name" value="20129bWexWx.wexfordharbourinformation" />
+       <Identity Name="XXXXXXX5.XXXXXXM" Publisher="CN=chris" Version="XX.XX" /> -->
+  <Identity Name="20129bWexWx.wexfordharbourinformation", Publisher="CN=1FC018DA-39D7-4CA3-AF4C-85FC4183577F",version="1.1.2"  />
+<!--   <preference name="windows-identity-name" value="20129bWexWx.wexfordharbourinformation" /> -->
   <platform name="android">
     <icon src="wexhrbr.png" width="180" height="180" />
   </platform>
