@@ -10,9 +10,9 @@
        Wexford Harbour Information
   </description>
 <!--   <preference name="windows-identity-name" value="20129bWexWx.wexfordharbourinformation" />
-       <Identity Name="XXXXXXX5.XXXXXXM" Publisher="CN=chris" Version="XX.XX" /> -->
-  <Identity Name="20129bWexWx.wexfordharbourinformation", Publisher="CN=1FC018DA-39D7-4CA3-AF4C-85FC4183577F",version="1.1.2"  />
-<!--   <preference name="windows-identity-name" value="20129bWexWx.wexfordharbourinformation" /> -->
+       <Identity Name="XXXXXXX5.XXXXXXM" Publisher="CN=chris" Version="XX.XX" />
+  <Identity Name="20129bWexWx.wexfordharbourinformation", Publisher="CN=1FC018DA-39D7-4CA3-AF4C-85FC4183577F",version="1.1.2"  /> -->
+  <preference name="windows-identity-name" value="20129bWexWx.wexfordharbourinformation" /> -->
   <platform name="android">
     <icon src="wexhrbr.png" width="180" height="180" />
   </platform>
