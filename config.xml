@@ -12,6 +12,7 @@
 <!--   <preference name="windows-identity-name" value="20129bWexWx.wexfordharbourinformation" />
        <Identity Name="XXXXXXX5.XXXXXXM" Publisher="CN=chris" Version="XX.XX" />
   <Identity Name="20129bWexWx.wexfordharbourinformation", Publisher="CN=1FC018DA-39D7-4CA3-AF4C-85FC4183577F",version="1.1.2"  /> -->
+  <preference name="phonegap-version" value="cli-6.0.0" />
   <preference name="windows-identity-name" value="20129bWexWx.wexfordharbourinformation" /> 
   <preference name="WindowsStoreIdentityName" value="9ndkxvqn9w7q.Name" />
 <!--     <preference name="windows-publisher" value="CN=1FC018DA-39D7-4CA3-AF4C-85FC4183577F" /> -->
