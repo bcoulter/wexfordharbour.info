@@ -21,8 +21,8 @@
   <platform name="winphone">
     <icon src="wexhrbr.png" width="180" height="180" />
     <icon src="StoreLogo.scale-100.png" width="300" height="300" />
-    <icon src="Square150x150Logo.scale-100.png" width="150" height="150" />
-    <icon src="Wide310x150Logo.scale-100.png" width="310" height="150" />
+    <icon src="Square150x150Logo.scale-100.png" width="300" height="300" />
+    <icon src="Wide310x150Logo.scale-100.png" width="300" height="300" />
   </platform>
   <plugin name="cordova-plugin-inappbrowser" source="npm" />
   <plugin name="cordova-plugin-whitelist" source="npm" />
