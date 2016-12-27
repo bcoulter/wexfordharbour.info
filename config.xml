@@ -9,13 +9,9 @@
   <description>
        Wexford Harbour Information
   </description>
-<!--   <preference name="windows-identity-name" value="20129bWexWx.wexfordharbourinformation" />
-       <Identity Name="XXXXXXX5.XXXXXXM" Publisher="CN=chris" Version="XX.XX" />
-  <Identity Name="20129bWexWx.wexfordharbourinformation", Publisher="CN=1FC018DA-39D7-4CA3-AF4C-85FC4183577F",version="1.1.2"  /> -->
   <preference name="phonegap-version" value="cli-6.0.0" />
   <preference name="windows-identity-name" value="20129bWexWx.wexfordharbourinformation" /> 
   <preference name="WindowsStoreIdentityName" value="9ndkxvqn9w7q.Name" />
-<!--     <preference name="windows-publisher" value="CN=1FC018DA-39D7-4CA3-AF4C-85FC4183577F" /> -->
   <platform name="android">
     <icon src="wexhrbr.png" width="180" height="180" />
   </platform>
@@ -24,6 +20,9 @@
   </platform>
   <platform name="winphone">
     <icon src="wexhrbr.png" width="180" height="180" />
+    <icon src="StoreLogo.scale-100.png width="300" height="300" />
+    <icon src="Square150x150Logo.scale-100.png width="150" height="150" />
+    <icon src="Wide310x150Logo.scale-100.png width="310" height="150" />
   </platform>
   <plugin name="cordova-plugin-inappbrowser" source="npm" />
   <plugin name="cordova-plugin-whitelist" source="npm" />
