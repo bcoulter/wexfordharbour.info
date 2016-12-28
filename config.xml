@@ -9,7 +9,7 @@
   <description>
        Wexford Harbour Information
   </description>
-  <preference name="phonegap-version" value="cli-6.0.0" />
+  <preference name="phonegap-version" value="cli-5.4.1" />
   <preference name="windows-identity-name" value="20129bWexWx.wexfordharbourinformation" /> 
   <preference name="WindowsStoreIdentityName" value="9ndkxvqn9w7q.Name" />
   <platform name="android">
