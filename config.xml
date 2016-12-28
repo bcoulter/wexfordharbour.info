@@ -19,10 +19,10 @@
     <icon src="wexhrbr.png" width="180" height="180" />
   </platform>
   <platform name="winphone">
-    <icon src="wexhrbr.png" width="180" height="180" />
-    <icon src="StoreLogo.scale-100.png" width="300" height="300" />
-    <icon src="Square150x150Logo.scale-100.png" width="300" height="300" />
-    <icon src="Wide310x150Logo.scale-100.png" width="300" height="300" />
+    <icon src="./www/res/icon/windows/wexhrbr.png" width="180" height="180" />
+    <icon src="./www/res/icon/windows/StoreLogo.scale-100.png" width="300" height="300" />
+    <icon src="./www/res/icon/windows/Square150x150Logo.scale-100.png" width="300" height="300" />
+    <icon src="./www/res/icon/windows/Wide310x150Logo.scale-100.png" width="300" height="300" />
   </platform>
   <plugin name="cordova-plugin-inappbrowser" source="npm" />
   <plugin name="cordova-plugin-whitelist" source="npm" />
