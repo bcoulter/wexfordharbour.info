@@ -4,7 +4,7 @@
 <!--     version="1.1.1" > -->
  xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
 <!-- versionCode is optional and Android only -->
-  <author email="brian@wexfordharbour.info" href="http://wexfordharbour.info">b@WexWx</author>
+  <author email="terry@sailireland.net" href="http://wexfordharbour.info">b@WexWx</author>
   <name>wexford harbour information</name>
   <description>
        Wexford Harbour Information
