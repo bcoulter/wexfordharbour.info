@@ -13,8 +13,8 @@
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="http://wexfordharbour.info/ajaxapp/jquery.js"></script>
     <script src="phonegap-1.0.0.js"></script>
-    <!-- Allow everything but only from the same origin and foo.com 
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' foo.com"> -->
+    <!-- Allow everything but only from the same origin and foo.com -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' foo.com"> 
     <meta http-equiv="refresh" content="300" >
   </head>
   <body>
@@ -41,7 +41,7 @@
     <div id="spacerdiv"> 
      pressure: <br>
      trend: <br>
-     temperature: <br>
+     temp./wind chill: <br>
     </div>
     
  	<div id="spacerdiv"> 
@@ -94,11 +94,12 @@
 
     $.ajax({                                      
       url: 'http://wexfordharbour.info/ajaxapp/api.php',                  //the script to call to get data          
-      data: "",                        
-      dataType: 'json',                //data format      
+      data: {},                        
+      dataType: 'json',                //data format was json   
+//      async: true,
+//      cache: true,  
       success: function(data)          //on receive of reply
       {
-     // 	var toptitl = ("<h2>"+("wexfordharbour").fontcolor("003366")+(".info").fontcolor("FF3300")+"</h2>");
         var datetime = data[26];          //get suitably formatted date and time
         var direction = data[2];          //get direction
         var windsp = data[4];             //get wind speed
@@ -109,7 +110,8 @@
         var rainHr = data[9];             //get rain iHr
         var pressure = data[10];          //get pressure
         var presstrend = data[11];        //get press trend 
-        var tempc = data[12];        //get press trend 
+        var tempc = data[12];             //get temp
+        var chill = data[27];             //get wind chill
         var curTide = data[15];           //get curr tide height
         var tidetrend = data[16];         //get current tide trend 
         var nxtTide = data[20];           //get next tide time
@@ -128,7 +130,7 @@
           	direction + "<br> </div>" +
           	
           	"<div id='spacerdiv'>" + pressure +" hPa <br>" +
-          	presstrend + "<br>" + tempc + " C<br></div>" + 
+          	presstrend + "<br>" + tempc+"/"+chill + " C<br></div>" + 
           	
             "<div id='spacerdiv'>" + curTide +" m " +  "<br>" +
         	nxtHiLo + " " + nxtTide + " " + nxtTideH + "m<br>" +
