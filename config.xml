@@ -53,4 +53,10 @@ android-versionCode="10101" >
 	<plugin name="cordova-plugin-whitelist" source="npm" />
 	<access origin="http://*" />
 	<access origin="https://*" />
+	<access origin="http:/wexfordharbour.info/ajaxapp/*" launch-external="yes" />
+	<access origin="http:/wexfordharbour.info/Weather/*" launch-external="yes" />
+	<access origin="http:/wexfordharbour.info/Tides/*" launch-external="yes" />
+	<access origin="http:/wexfordharbour.info/iHistory/*" launch-external="yes" />
+	<access origin="http:/wexfordharbour.info/iChart/*" launch-external="yes" />
+	<access origin="http:/wexfordharbour.info/*" launch-external="yes" />
 </widget>
