@@ -46,9 +46,15 @@
 	</platform>
 	<platform name="winphone">
 		<icon src="wexhrbr.png" width="180" height="180" />
-		<icon src="res/icon/windows/StoreLogo.scale-100.png" width="300" height="300" />
-		<icon src="res/icon/windows/Square150x150Logo.scale-100.png" width="300" height="300" />
-		<icon src="res/icon/windows/Wide310x150Logo.scale-100.png" width="300" height="300" />
+		<icon src="res/icon/windows/StoreLogo.png" width="100" height="100" />
+		<icon src="res/icon/windows/Square150x150Logo.png" width="150" height="150" />
+		<icon src="res/icon/windows/Wide310x150Logo.png" width="310" height="150" />
+	</platform>
+	<platform name="windows">
+		<icon src="wexhrbr.png" width="180" height="180" />
+		<icon src="res/icon/windows/StoreLogo.png" width="100" height="100" />
+		<icon src="res/icon/windows/Square150x150Logo.png" width="150" height="150" />
+		<icon src="res/icon/windows/Wide310x150Logo.png" width="310" height="150" />
 	</platform>
 	<plugin name="cordova-plugin-inappbrowser" source="npm" />
 	<plugin name="cordova-plugin-whitelist" source="npm" />
