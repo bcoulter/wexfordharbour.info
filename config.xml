@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
     <widget 
 	id="info.wexfordharbour.app"
-    version="2.0" ios-CFBundleVersion="2.0.0"
+    version="2.0" ios-CFBundleVersion="2.0.1"
     android-versionCode="10101" 
 	xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" >
 	<!--     version="1.1.1" > -->
@@ -50,9 +50,19 @@
 		<icon src="res/icon/windows/Wide310x150Logo.png" width="310" height="150" />
 	</platform>
 	<plugin name="cordova-plugin-inappbrowser" source="npm" />
-	<plugin name="cordova-plugin-whitelist" source="npm" />
-	<access origin="http://*" />
-	<access origin="https://*" />
+<!--	<plugin name="cordova-plugin-whitelist" source="npm" />  // For Android -->
+    <plugin name="cordova-plugin-whitelist" spec="https://github.com/apache/cordova-plugin-whitelist.git" />
+
+    <access origin="*" launch-external="yes" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <access origin="http://127.0.0.1*"/>
+    <allow-navigation href="*"/>
+    <allow-intent href="*"/>
+
+<!-- 	<access origin="http://*" />
+	<access origin="https://*" /> -->
+	
 	<access origin="http:/wexfordharbour.info/ajaxapp/*" launch-external="yes" />
 	<access origin="http:/wexfordharbour.info/Weather/*" launch-external="yes" />
 	<access origin="http:/wexfordharbour.info/Tides/*" launch-external="yes" />
