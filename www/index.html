@@ -96,8 +96,10 @@
       url: 'http://wexfordharbour.info/ajaxapp/api.php',                  //the script to call to get data          
       data: {},                        
       dataType: 'json',                //data format was json   
-//      async: true,
-//      cache: true,  
+      contentType: "application/json; charset=utf-8",
+      async: true,
+      cache: false,
+      headers: { "cache-control": "no-cache" },
       success: function(data)          //on receive of reply
       {
         var datetime = data[26];          //get suitably formatted date and time
