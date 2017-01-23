@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
     <widget 
 	id="info.wexfordharbour.app"
-    version="2.0" ios-CFBundleVersion="2.0.4"
-    android-versionCode="10101" 
+    version="4.0" ios-CFBundleVersion="2.0.4"
+    android-versionCode="40001" 
 	xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" >
 	<!--     version="1.1.1" > -->
 	<!-- versionCode is optional and Android only -->
@@ -11,7 +11,7 @@
 	<description>Wexford Harbour Information</description>
 	<preference name="windows-identity-name" value="20129bWexWx.wexfordharbourinformation" />
 	<preference name="WindowsStoreIdentityName" value="9ndkxvqn9w7q.Name" />
-	<preference name="phonegap-version" value="cli-5.1.1" /> <!-- iOS preference for best hope -->
+	<!--<preference name="phonegap-version" value="cli-5.1.1" /> <!-- iOS preference for best hope -->
 	<!--<preference name="phonegap-version" value="cli-6.0.0" /> 
 	<feature name="http://api.phonegap.com/1.0/network"/> -->
 	<platform name="android">
