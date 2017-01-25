@@ -122,6 +122,7 @@
         var followTime = data[23];        //get following tide time
         var followTideH = data[24];        //get following tide height
         var followHiLo = data[25];        //get following tide HiLo
+        var appComment = data[28];        //get app comment if any
         //--------------------------------------------------------------------------------------
         // 3) Update html content
         //--------------------------------------------------------------------------------------
@@ -139,7 +140,8 @@
         	followHiLo + " " + followTime  +  " " + followTideH + "m<br> </div>" +
         	
            	"<div id='spacerdiv'>" + rainHr +" mm" + "<br>" +
-           	rain24h + " mm   	 <br> </div>" 
+           	rain24h + " mm   	 <br> </div>" + "<br>" + 
+           	appComment
            	
            	);     
            //Set output element html
