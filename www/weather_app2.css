@@ -81,6 +81,13 @@ p {
    }
 
 
+#icon {
+		position:relative;
+		float: center;
+		text-align: center;
+		z-index:0;
+	}
+	
 #leftside {
 		position:relative;
 	    color : #003366;
@@ -96,7 +103,19 @@ p {
 #tidestoday {
 		position:relative;
 	    color : #003366;
-        font-size:1.2em; 
+        font-size:1.4em; 
+		width:100%;
+		float: center;
+	
+		text-align: center;
+		z-index:0;
+	}
+
+
+#information {
+		position:relative;
+	    color : #003366;
+        font-size:1.4em; 
 		width:100%;
 		float: center;
 	
