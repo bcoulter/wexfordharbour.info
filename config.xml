@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
     <widget 
 	id="info.wexfordharbour.app"
-    version="2.0" ios-CFBundleVersion="2.0.7"
+    version="2.0" ios-CFBundleVersion="2.0.8"
     android-versionCode="10201" 
 	xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" >
 	<!--     version="1.1.1" > -->
